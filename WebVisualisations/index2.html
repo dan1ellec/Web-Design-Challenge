@@ -42,12 +42,65 @@
     </div>
   </nav>
 
+  <div>
+    <h1>Summary: Latitude vs. X</h1>
+    <hr>
+    <br>
+    <p>
+      The purpose of the project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+    </p>
+    <br>
+    <p>
+      After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This website provides the sourse data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+    </p>
+
+  </div>
+
+  <section>
+    <h2>
+      Visualisations
+    </h2>
+    <!-- this hr thing puts the line -->
+    <hr>
+    <article>
+      <!-- self says to open the link we click in the same tab. _blank would be a new tab. self is default so don't actually need to write -->
+      <a target="_self" href="html/max_temp.html">
+      <img src="assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph">
+      </a>
+    </article>
+   
+    <article>
+      <a href="html/humidity.html">
+      <img target="_blank" src="assets/images/Fig2.png" alt="Humidity vs. Latitude Graph">
+      </a>
+    </article>
+
+    <article>
+      <a href="html/cloudiness.html">
+      <img target="_blank" src="assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph">
+      </a>
+    </article>
+
+    <article>
+      <a href="html/wind_speed.html">
+      <img target="_blank" src="assets/images/Fig4.png" alt="Wind Speed vs. Latitude Graph">
+      </a>
+    </article>
+    
+
+
+
+
+  </section>
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-
 </body>
 
 </html>
