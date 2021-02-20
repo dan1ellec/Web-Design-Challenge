@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   
   <!-- copied this stuff from homework session, don't think it is doing anything. it was from a different document i think so probs don't need -->
+  <!-- actually i think this helps with sizing in mobile websites -->
   <meta name="viewport" content="width=divce-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -14,30 +15,29 @@
   <!-- so update, things fall apart when I delete it. the navbar falls to shit -->
   <!-- if I move it below the other two everything seems to get smaller?? -->
   <!-- I still dont get the grey backgrounds :( -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
   <!-- link to bootstrap stylesheet -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+  <!-- I think it is workign better without this tbh and that the link below is doing it better!! -->
+  <!-- seems to alter size only?? the other one is doing all the work-->
+  <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">-->
   <!-- link to own stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" media="screen">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
 
 
 </head>
 
-<body>
+<body class="background">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index2.html">Latitude</a>
+  <nav class="navbar navbar-expand-lg navbar-light" id = "navbar-rectangle">
+    <a class="navbar-brand" id = "navbar-header" href="index2.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
@@ -63,18 +63,25 @@
   <div class="container">
     <div class="row">
       <!-- main webpage -->
-      <div class="col-md-8">
-        <h1>Summary: Latitude vs. X</h1>
-        <hr>
-        <br>
-        <p>
-          The purpose of the project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-        </p>
-        <br>
-        <p>
-          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This website provides the sourse data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-        </p>
-        <br>
+      <div class="col-md-8" class="whitebackground">
+        <div id="summary-heading">
+          <h1>  Summary: Latitude vs. X</h1>
+          <hr>
+          <br>
+        </div>
+        <div>
+          <img src="assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph" >
+        </div> 
+        <div> 
+          <p>
+            The purpose of the project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+          </p>
+          <br>
+          <p>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This website provides the sourse data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+          </p>
+          <br>
+        </div>
 
       </div>
 
@@ -120,6 +127,8 @@
 
  <!-- i don't think I need this-->
  <!-- or it helps the navbar drop down-->
+<!-- the first and third one definitely helps with navbar drop down-->
+ <!-- don't know what middle one does-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
