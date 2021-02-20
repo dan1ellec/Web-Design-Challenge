@@ -6,7 +6,10 @@
   <title>Cloudiness</title>
   <!-- I think this is bringing in our bootstrap stylesheet, don't really get it -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- link to own stylesheet -->
+  <link rel="stylesheet" href="../assets/css/style.css" media="screen">
+  <!-- link to bootstrap stylesheet -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 </head>
 
 <body>
@@ -44,63 +47,68 @@
       </div>
     </nav>
   
-   <!-- main webpage --> 
-    <div>
-      <!-- title -->
-      <h1>Cloudiness</h1>
-      <hr>
-      <br>
-    </div>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-8">
+        <!-- main webpage --> 
+        <div>
+          <!-- title -->
+          <h1>Cloudiness</h1>
+          <hr>
+          <br>
+        </div>
 
-    <div>
-      <!-- Image -->
-      <img src="../assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph" />
-      <br>
+        <div>
+          <!-- Image -->
+          <img src="../assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph" />
+          <br>
 
-      <!-- paragraph-->
-      <p>
-        Insert paragraph explanation here
-      </p>
-      <br>
-      <br>
-    </div>
+          <!-- paragraph-->
+          <p>
+            Insert paragraph explanation here
+          </p>
+          <br>
+          <br>
+        </div>
+      </div>
 
-    <!-- sidebar -->
-    <div>
+      <!-- sidebar -->
+      <div class="col-md-4">
 
-      <h2>
-        Visualisations
-      </h2>
-      <hr>
+        <h2>
+          Visualisations
+        </h2>
+        <hr>
 
-      <article>
-        <a target="_self" href="max_temp.html">
-        <img src="../assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph">
-        </a>
-      </article>
-     
-      <article>
-        <a href="humidity.html">
-        <img target="_blank" src="../assets/images/Fig2.png" alt="Humidity vs. Latitude Graph">
-        </a>
-      </article>
-  
-      <!-- need to set as active -->
-      <article>
-        <a href="cloudiness.html" >
-        <img target="_blank" src="../assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph">
-        </a>
-      </article>
-  
-      <article>
-        <a href="wind_speed.html">
-        <img target="_blank" src="../assets/images/Fig4.png" alt="Wind Speed vs. Latitude Graph">
-        </a>
-      </article>
+        <article>
+          <a target="_self" href="max_temp.html">
+          <img src="../assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph" class="img-thumbnail">
+          </a>
+        </article>
+      
+        <article>
+          <a href="humidity.html">
+          <img target="_blank" src="../assets/images/Fig2.png" alt="Humidity vs. Latitude Graph" class="img-thumbnail">
+          </a>
+        </article>
     
-     </div>
-  
+        <!-- need to set as active -->
+        <article>
+          <a href="cloudiness.html" >
+          <img target="_blank" src="../assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph" class="img-thumbnail">
+          </a>
+        </article>
+    
+        <article>
+          <a href="wind_speed.html">
+          <img target="_blank" src="../assets/images/Fig4.png" alt="Wind Speed vs. Latitude Graph" class="img-thumbnail">
+          </a>
+        </article>
+      
+      </div>
 
+    </div> 
+  </div>
 
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
