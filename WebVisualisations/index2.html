@@ -60,67 +60,73 @@
     </div>
   </nav>
 
-  <div class="container">
+
+  
+  <div class="container" >
     <div class="row">
       <!-- main webpage -->
-      <div class="col-md-8" class="whitebackground">
+      <div class="col-md-8">
+      <div class="box-main">
         <div id="summary-heading">
           <h1>  Summary: Latitude vs. X</h1>
           <hr>
           <br>
         </div>
         <div>
-          <img src="assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph" >
-        </div> 
-        <div> 
-          <p>
+          <img src="assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph" class="image">
+          <p class="summarytext">
             The purpose of the project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
           </p>
-          <br>
-          <p>
+          <p class="summarytext">
             After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This website provides the sourse data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
           </p>
           <br>
         </div>
 
       </div>
+      </div>
 
       <!-- sidebar -->
       <div class="col-md-4">
-        <h2>
-          Visualisations
-        </h2>
-        <!-- this hr thing puts the line -->
-        <hr>
-        <article>
-          <!-- self says to open the link we click in the same tab. _blank would be a new tab. self is default so don't actually need to write -->
-          <a target="_self" href="html/max_temp.html">
-          <img src="assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph" class="img-thumbnail">
-          </a>
-        </article>
       
-        <article>
-          <a href="html/humidity.html">
-          <img target="_blank" src="assets/images/Fig2.png" alt="Humidity vs. Latitude Graph" class="img-thumbnail">
-          </a>
-        </article>
-
-        <article>
-          <a href="html/cloudiness.html">
-          <img target="_blank" src="assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph" class="img-thumbnail">
-          </a>
-        </article>
-
-        <article>
-          <a href="html/wind_speed.html">
-          <img target="_blank" src="assets/images/Fig4.png" alt="Wind Speed vs. Latitude Graph" class="img-thumbnail">
-          </a>
-        </article>
+        <div class="box-sidebar">
+          <h2>
+            Visualisations
+          </h2>
+          <!-- this hr thing puts the line -->
+          <hr>
+          <article>
+            <!-- self says to open the link we click in the same tab. _blank would be a new tab. self is default so don't actually need to write -->
+            <a target="_self" href="html/max_temp.html">
+            <img src="assets/images/Fig1.png" alt="Max Temperature vs. Latitude Graph" class="img-thumbnail" id="topleft">
+            </a>
+          </article>
         
+          <article>
+            <a href="html/humidity.html">
+            <img target="_blank" src="assets/images/Fig2.png" alt="Humidity vs. Latitude Graph" class="img-thumbnail" id="topright">
+            </a>
+          </article>
+          <br>
+          <br>
+          <article>
+            <a href="html/cloudiness.html">
+            <img target="_blank" src="assets/images/Fig3.png" alt="Cloudiness vs. Latitude Graph" class="img-thumbnail" id="bottomleft">
+            </a>
+          </article>
 
+          <article>
+            <a href="html/wind_speed.html">
+            <img target="_blank" src="assets/images/Fig4.png" alt="Wind Speed vs. Latitude Graph" class="img-thumbnail" id="bottomright">
+            </a>
+          </article>
+        </div>
+
+      
       </div>
     </div>
   </div> 
+  
 
 
 
