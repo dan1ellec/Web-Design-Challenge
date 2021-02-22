@@ -80,13 +80,24 @@
         padding-bottom: 5px;
     }
 
+    /* comparison page graph headings*/
+    h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        color:  rgb(47, 162, 150);
+        text-align: center;
+
+
+    }
+
 /* text*/
     p {
             
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 10px;
-        margin-top: 20px;
+        margin-top: 5px;
     }    
 
 /* background colours*/
@@ -95,24 +106,23 @@
         background-color: lightgray;
     }
 
-    /* background on data pages */
-    .whitebackground{
-        background-color: white;
-        border: 3px dashed #00A4BD;
-        padding: 15px;
-        background: #EAF0F6;
-        background-clip: border-box;
-    }
-
     .box {
-        
+        padding-left: 20px;
         margin-bottom: 20px;
         margin-top: 50px;
-        margin-left: 100px;
-        margin-right: 100px; 
+        margin-left: 0px;
+        margin-right: 0px;
         background-color: white;
     }
 
+    /* setting margin only for larger screens*/
+    @media only screen and (min-width: 992px) {
+        .box {
+            margin-left: 100px;
+            margin-right: 100px; 
+        }
+
+    }
 
     .box-main{
         margin-bottom: 20px;
@@ -132,7 +142,7 @@
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
-        
+        position: relative;
         background-color: white;
     }
 
@@ -155,7 +165,7 @@
         width: 250px;
         height: 250px;
         float: left;
-        font-family: Veranda;
+       
 
     }
 
@@ -163,7 +173,15 @@
         width: 150px;
         height: 150px;
         
-        font-family: Veranda;
+        
+    }
+
+    .active-thumbnail{
+        width: 150px;
+        height: 150px;
+        padding:1px;
+        border:1px solid rgb(47, 162, 150);
+        background-color:rgb(47, 162, 150);
     }
 
     .main-image {
@@ -177,9 +195,36 @@
     }
 
 
-/* not working*/
-.active-thumbnail{
-    padding:1px;
-    border:1px solid #021a40;
-    background-color:teal;
-}
+    /* setting sidebar image positions for larger screens*/
+    @media only screen and (min-width: 1200px) {
+        .article2 {
+            position: absolute;
+            top: 27.5%;
+            right: 5%;
+        }
+    
+        .article4 {
+            position: absolute;
+            bottom: 2%;
+            right: 5%;
+    
+        }
+
+    }
+    
+    /* setting sidebar image positions for smaller screens*/
+    @media only screen and (max-width: 768px) {
+        .article2 {
+            position: absolute;
+            top: 27.5%;
+            right: 5%;
+        }
+    
+        .article4 {
+            position: absolute;
+            bottom: 2%;
+            right: 5%;
+    
+        }
+
+    }
