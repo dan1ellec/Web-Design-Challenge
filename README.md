@@ -19,18 +19,18 @@ In building this dashboard, there will be individual pages for each plot and a m
 
 The website consists of 7 pages total, including:
 
-* A [landing page](#landing-page) containing:
+* A [Landing Page](#landing-page) containing:
   * An explanation of the project.
   * Links to each visualisations page. There is a sidebar containing preview images of each plot, and clicking an image takes the user to that visualization.
-* Four [visualisation pages](#visualisation-pages), each with:
+* Four [Visualisation Pages](#visualisation-pages), each with:
   * A descriptive title and heading tag.
   * The plot/visualisation itself for the selected comparison.
   * A paragraph describing the plot and its significance.
-* A ["Comparisons" page](#comparisons-page) that:
+* A [Comparisons Page](#comparisons-page) that:
   * Contains all of the visualisations on the same page so they can be visually compared easily.
   * Uses a Bootstrap grid for the visualizations.
     * The grid is two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-* A ["Data" page](#data-page) that:
+* A [Data Page](#data-page) that:
   * Displays a responsive table containing the data used in the visualisations.
     * The table is a bootstrap table component. 
     * The data comes from converting the `.csv` file to HTML.
@@ -49,22 +49,22 @@ View web design at: https://dan1ellec.github.io/dani1ellec.github.io/
 
 ## Preview
 
-### <a id="landing-page"></a>Landing page
+#### <a id="landing-page"></a>Landing Page
 
 ![Landing page large screen](Images/landingResize.png)
 
 
-### <a id="comparisons-page"></a>Comparisons page
+#### <a id="comparisons-page"></a>Comparisons Page
 
 ![comparison page large screen](Images/comparison-lg.png)
 
 
-### <a id="data-page"></a>Data page
+#### <a id="data-page"></a>Data Page
 
 ![data page large screen](Images/data-lg.png)
 
 
-### <a id="visualisation-pages"></a>Visualisation pages
+#### <a id="visualisation-pages"></a>Visualisation Pages
 
 There are four of these, one for each visualisation. Here's an example of one:
 
